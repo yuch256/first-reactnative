@@ -14,8 +14,6 @@ export default class Welcome extends Component {
     this.state = {}
   }
   // 2.组件装载阶段
-  componentWillMount() { console.log('组件装载前调用，整个生命周期只调用一次，此时可以修改state') }
-
   componentDidMount() {
     console.log('组件装载之后调用，只调用一次')
     // this.timer = setTimeout(() => {
@@ -35,14 +33,10 @@ export default class Welcome extends Component {
       })
   }
   // 3.组件的更新阶段（此阶段会根据props和state的改变不断循环）
-  componentWillReceiveProps(nextProps) { console.log('组件初始化时不调用，组件接受新的props时调用') }
-
   shouldComponentUpdate(nextProps, nextState) {
     console.log(`组件接受新的state或者props时调用，我们可以设置在此对比前后两个props和state是否相同，
   如果相同则返回false阻止更新，可以优化性能`)
   }
-
-  componentWillUpdate(nextProps, nextState) { console.log('组件初始化时不调用，只有在组件将要更新时才调用，此时可以修改state') }
 
   componentDidUpdate() { console.log('组件初始化时不调用，组件更新完成后调用，此时可以获取dom节点') }
   // 4.组件的卸载阶段

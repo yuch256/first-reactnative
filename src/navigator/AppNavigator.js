@@ -4,14 +4,14 @@ import { createDrawerNavigator } from 'react-navigation-drawer';
 
 import Welcome from '../page/Welcome'
 import SignUp from '../page/SignUp'
-// import SignOut from '../page/SignOut'
+import SignOut from '../page/SignOut'
 import Home from '../page/Home'
-// import Layout from '../page/Layout'
-// import Control from '../page/Control'
-// import Dialog from '../page/Dialog'
-// import Activity from '../page/Activity'
-// import MenuPage from '../page/Menu'
-// import Async from '../page/Async'
+import Layout from '../page/Layout'
+import Control from '../page/Control'
+import Dialog from '../page/Dialog'
+import Activity from '../page/Activity'
+import MenuPage from '../page/Menu'
+import Async from '../page/Async'
 
 const InitNavigator = createStackNavigator({
   WelcomePage: {
@@ -33,13 +33,13 @@ const SignNavigator = createStackNavigator({
 
 const MyDrawerNavigator = createDrawerNavigator({
   '首页': Home,
-  // '实习2  Layout': Layout,
-  // '实习3  Control': Control,
-  // '实习4  Dialog': Dialog,
-  // '实习5  Activity': Activity,
-  // '实习6  Menu': MenuPage,
-  // '实习7  Async': Async,
-  // '个人中心': SignOut
+  '实习2  Layout': Layout,
+  '实习3  Control': Control,
+  '实习4  Dialog': Dialog,
+  '实习5  Activity': Activity,
+  '实习6  Menu': MenuPage,
+  '实习7  Async': Async,
+  '个人中心': SignOut
 }, {
   // initialRouteName: '实习7  Async',
   initialRouteName: '首页',
