@@ -7,7 +7,7 @@ import AppNavigator from './src/navigator/AppNavigator'
 // when app is fu** cannot work but some time ago is working well??!
 // taskkill /f /im node.exe
 // npm start --reset-cache
-// react-native run-android
+// (另起一个终端)react-native run-android
 
 export default function App() {
   return (
