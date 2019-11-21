@@ -12,6 +12,7 @@ import Dialog from '../page/Dialog'
 import Activity from '../page/Activity'
 import MenuPage from '../page/Menu'
 import Async from '../page/Async'
+import System from '../page/System'
 
 const InitNavigator = createStackNavigator({
   WelcomePage: {
@@ -33,16 +34,17 @@ const SignNavigator = createStackNavigator({
 
 const MyDrawerNavigator = createDrawerNavigator({
   '首页': Home,
-  '实习2  Layout': Layout,
-  '实习3  Control': Control,
-  '实习4  Dialog': Dialog,
-  '实习5  Activity': Activity,
-  '实习6  Menu': MenuPage,
-  '实习7  Async': Async,
+  '实习02  Layout': Layout,
+  '实习03  Control': Control,
+  '实习04  Dialog': Dialog,
+  '实习05  Activity': Activity,
+  '实习06  Menu': MenuPage,
+  '实习07  Async': Async,
+  '实习10  System': System,
   '个人中心': SignOut
 }, {
-  // initialRouteName: '实习7  Async',
-  initialRouteName: '首页',
+  initialRouteName: '实习10  System',
+  // initialRouteName: '首页',
   drawerPosition: 'left',
   drawerType: 'front',
   hideStatusBar: true,
