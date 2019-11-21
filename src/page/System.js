@@ -8,6 +8,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import HeaderRightMenu from '../component/HeaderRightMenu'
 
 import System_1 from '../component/System/System_1'
+import Sensors from '../component/System/Sensors'
 
 class MySystem extends Component {
   render() {
@@ -15,6 +16,7 @@ class MySystem extends Component {
       <View style={{ flex: 1 }}>
         <ScrollView style={{ paddingLeft: 10, paddingRight: 10 }}>
           <System_1 />
+          <Sensors />
         </ScrollView>
       </View>
     );
