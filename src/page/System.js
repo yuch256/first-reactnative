@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {
   View,
   ScrollView,
+  TouchableOpacity,
+  Text,
 } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
 
@@ -9,15 +11,31 @@ import HeaderRightMenu from '../component/HeaderRightMenu'
 
 import System_1 from '../component/System/System_1'
 import Sensors from '../component/System/Sensors'
+import Camera from '../component/System/Camera'
 
 class MySystem extends Component {
+  state = {
+    part: 1
+  }
+  handleClickGoTo = (part = 0) => {
+    this.setState({ part })
+  }
   render() {
     return (
       <View style={{ flex: 1 }}>
-        <ScrollView style={{ paddingLeft: 10, paddingRight: 10 }}>
-          <System_1 />
-          <Sensors />
-        </ScrollView>
+        {
+          this.state.part === 1 ?
+            <ScrollView style={{ paddingHorizontal: 10 }}>
+              <TouchableOpacity
+                onPress={this.handleClickGoTo}
+                style={{ alignItems: 'center' }}>
+                <Text>GoTo Camera</Text>
+              </TouchableOpacity>
+              <System_1 />
+              <Sensors />
+            </ScrollView> :
+            <Camera />
+        }
       </View>
     );
   }
