@@ -7,7 +7,7 @@ import {
   AsyncStorage,
   Text,
 } from 'react-native';
-import { withNavigationFocus } from 'react-navigation'
+import { withNavigationFocus } from 'react-navigation';
 import { Form, Item, Input, Label, Button, } from 'native-base';
 
 import GStyle from '../../style/GlobalStyle'

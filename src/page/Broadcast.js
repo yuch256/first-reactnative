@@ -25,7 +25,7 @@ export default Broadcast = createStackNavigator({
   Broadcast: {
     screen: MyBroadcast,
     navigationOptions: ({ navigation }) => ({
-      title: '实习10  System',
+      title: '实习11  Broadcast',
       headerRight: (
         <HeaderRightMenu navigation={navigation} />
       )

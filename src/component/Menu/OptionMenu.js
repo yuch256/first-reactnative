@@ -4,7 +4,6 @@ import {
   StyleSheet,
   ToastAndroid,
   Image,
-  ScrollView,
   TouchableWithoutFeedback,
   TouchableOpacity,
   Modal,
