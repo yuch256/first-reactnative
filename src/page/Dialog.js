@@ -34,6 +34,6 @@ export default Dialog = createStackNavigator({
       headerRight: (
         <HeaderRightMenu navigation={navigation} />
       )
-    })
+    }),
   }
-})
+});

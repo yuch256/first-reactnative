@@ -15,6 +15,7 @@ import Async from '../page/Async'
 import Toolbar from '../page/ex08_Toolbar'
 import System from '../page/System'
 import Broadcast from '../page/Broadcast'
+import Network from '../page/ex15_Network'
 
 const InitNavigator = createStackNavigator({
   WelcomePage: {
@@ -45,9 +46,10 @@ const MyDrawerNavigator = createDrawerNavigator({
   '实习08  Toolbar': Toolbar,
   '实习10  System': System,
   '实习11  Broadcast': Broadcast,
+  '实习15  Network': Network,
   '个人中心': SignOut
 }, {
-  initialRouteName: '实习08  Toolbar',
+  initialRouteName: '实习15  Network',
   // initialRouteName: '首页',
   drawerPosition: 'left',
   drawerType: 'front',

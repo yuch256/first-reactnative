@@ -58,7 +58,7 @@ export default class SignUp extends Component {
             style={{ marginLeft: 10, marginRight: 10 }}
             onPress={() => Sign.appSignUp(navigation, usr, pwd)}
           >
-            <Text>Sign Up</Text>
+            <Text style={{ color: '#fff' }}>Sign Up</Text>
           </Button>
         </Content>
       </Container>
