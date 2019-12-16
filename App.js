@@ -1,6 +1,6 @@
 import React from 'react';
 
-import AppNavigator from './src/navigator/AppNavigator'
+import AppNavigator from './src/navigator/AppNavigator';
 // 1
 // when start a expo app
 // set REACT_NATIVE_PACKAGER_HOSTNAME=192.168.3.110
@@ -12,7 +12,7 @@ import AppNavigator from './src/navigator/AppNavigator'
 // (另起一个终端)react-native run-android
 
 // 3
-// Error: EPERM: operation not permitted, lstat 'c:\Users\yuch\Desktop\android\android\app\build\intermediates\blame\res\debug\multi-v2'    
+// Error: EPERM: operation not permitted, lstat 'c:\Users\yuch\Desktop\android\android\app\build\intermediates\blame\res\debug\multi-v2'
 // Emitted 'error' event at:
 // at NodeWatcher.<anonymous> (c:\Users\yuch\Desktop\android\node_modules\sane\src\node_watcher.js:291:16)
 // at FSReqWrap.oncomplete (fs.js:153:21)
@@ -20,7 +20,5 @@ import AppNavigator from './src/navigator/AppNavigator'
 // windows, gradlew clean // for Mac users, ./gradlew clean
 
 export default function App() {
-  return (
-    <AppNavigator />
-  );
+  return <AppNavigator />;
 }

@@ -6,7 +6,6 @@ import {
 	Text,
 	SafeAreaView,
 } from 'react-native';
-import { Row } from 'native-base';
 
 export default class Control_2 extends Component {
 	render() {

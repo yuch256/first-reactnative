@@ -74,6 +74,7 @@ class MyNetwork extends Component {
       .then(resJson => {
         // TODO render会执行四次，可能是重复渲染的问题，前三次里面console出来的值都为0，最后一次才是正确的，
         // TODO 为了不报undefined错误，这里只取了一个base64值，待解决
+        // TODO 。。。前三次console好像也不一定都是0
         this.setState({ personinfoList: JSON.parse(resJson.info)[0].imageBase64 })
       })
       .catch(err => console.log(err));
