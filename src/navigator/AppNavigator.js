@@ -49,7 +49,7 @@ const MyDrawerNavigator = createDrawerNavigator({
   '实习15  Network': Network,
   '个人中心': SignOut
 }, {
-  initialRouteName: '实习15  Network',
+  initialRouteName: '首页',
   // initialRouteName: '首页',
   drawerPosition: 'left',
   drawerType: 'front',

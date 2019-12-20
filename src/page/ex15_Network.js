@@ -84,7 +84,6 @@ class MyNetwork extends Component {
     let { res1, res2, curcity, curcityid, inputcityid, personinfoList } = this.state;
     return (
       <View style={{ flex: 1 }}>
-        {console.log(personinfoList.length)}
         <ScrollView style={{ paddingHorizontal: 10 }}>
           <View style={styles.reqView}>
             <CityIdInput inputcityid={inputcityid} onChange={this.handleChangeInputCityId} onClick={this.handleClickInputCityIdBtn} />
